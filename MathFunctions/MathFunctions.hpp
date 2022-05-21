@@ -1,0 +1,1 @@
+double mysquare(double d);
