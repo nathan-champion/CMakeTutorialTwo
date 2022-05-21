@@ -16,7 +16,6 @@ configure_file(Config.hpp.in Config.hpp)
 if (USE_MYMATH)
     add_subdirectory(MathFunctions)
     list(APPEND EXTRA_LIBS MathFunctions)
-    list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions")
 endif()
 
 # add the executable
@@ -27,5 +26,4 @@ target_link_libraries(${PROJECT_NAME} PUBLIC ${EXTRA_LIBS})
 # this was done to allow the configuration file to be included to the project
 target_include_directories(${PROJECT_NAME} PUBLIC
                           "${PROJECT_BINARY_DIR}"
-                          ${EXTRA_INCLUDES}
                           )
