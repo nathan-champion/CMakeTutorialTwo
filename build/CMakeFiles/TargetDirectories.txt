@@ -1,3 +1,0 @@
-/home/nathan/repos/comLineCMake/build/CMakeFiles/rebuild_cache.dir
-/home/nathan/repos/comLineCMake/build/CMakeFiles/edit_cache.dir
-/home/nathan/repos/comLineCMake/build/CMakeFiles/hello_world.dir
