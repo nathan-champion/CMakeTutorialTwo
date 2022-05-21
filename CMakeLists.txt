@@ -1,26 +1,9 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.10)
 
-project(hello_world LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
 
+# set the project name
+project(hello_world)
+
+# add the executable
 add_executable(${PROJECT_NAME} main.cpp)
-
-set(MYVAR "tony")
-
-function(print var)
-    message("${var} = ${${var}}")
-endfunction()                                                                                             
-
-function(print_a_lot)
-    foreach(var ${ARGN})
-        message("${var} = ${${var}}")    
-    endforeach(var)
-endfunction()
-
-function(print_env)
-    foreach(var ${ARGN})
-        message("${var} = $ENV{${var}}")    
-    endforeach(var)
-endfunction()
-
-print(PROJECT_NAME)
-print_a_lot(PROJECT_NAME MYVAR)
